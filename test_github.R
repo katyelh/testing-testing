@@ -2,7 +2,7 @@
 
 print("hello")
 
-# make x 
+# make x, y, and z
 
 x <- 1:10
 
