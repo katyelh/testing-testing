@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
-limpet <- read.csv("limpet.csv") #read in file
-glimpse(limpet) #look at file
+```{r echo=FALSE}
+limpet <- read.csv("limpet.csv") #read in data file
+glimpse(limpet) #look at data 
 ggplot(limpet, aes (x = DENSITY, y = EGGS, colour = SEASON)) + #plot eggs against density, colour by season
   geom_point() +
   theme_bw() +
