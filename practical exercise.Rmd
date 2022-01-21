@@ -1,0 +1,21 @@
+---
+title: "test exercise"
+author: "Katy Hudson"
+date: "1/21/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+limpet <- read.csv("limpet.csv") #read in file
+glimpse(limpet) #look at file
+ggplot(limpet, aes (x = DENSITY, y = EGGS, colour = SEASON)) + #plot eggs against density, colour by season
+  geom_point() +
+  theme_bw() +
+  scale_colour_manual(values = c("springgreen", "pink")) 
+```
+
+
