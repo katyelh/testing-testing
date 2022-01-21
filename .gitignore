@@ -1,3 +1,9 @@
+# hide project specific folders/files
+raw-data/
+*.pptx
+*.docx
+rubbish.R
+
 # History files
 .Rhistory
 .Rapp.history
